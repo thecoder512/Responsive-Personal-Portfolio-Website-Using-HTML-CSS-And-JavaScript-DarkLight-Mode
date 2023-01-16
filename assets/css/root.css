@@ -1,0 +1,22 @@
+/* ===== root-varable ====== */
+:root {
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font:  sans-serif;
+
+    /*========== Colors ==========*/
+    --main-color: #0E0E23;
+    --second-color: #131731;
+    --menu-focus-color: #11132C;
+    --blue-white-color: #4255D4;
+    --first-anmimation-color: #6f7fe6c5;
+    --second-animation-color: #4a559ec5;
+    --dark-blue: #161A39;
+    --theme-svg-color: #4255D3;
+    --fonts-color-whity: #E7E8EA;
+    --font-color-grayish: #BEBEC4;
+    --font-color-gray: #787988;
+
+    /*========== z-index ==========*/
+    --fixed-z: 10;
+}

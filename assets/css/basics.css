@@ -1,0 +1,32 @@
+/* BASICS VARIABLES */
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0E0E23;
+    color: var(--fonts-color-whity);
+    font-size: 1rem;
+    font-family: var(--body-font);
+    transition: .4s ease-in;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+svg {
+    fill: var(--fonts-color-whity);
+    transition: .3s ease;
+}

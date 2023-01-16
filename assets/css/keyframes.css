@@ -1,0 +1,32 @@
+@keyframes right-left {
+    from{
+        width: 0;
+        left: 0;
+    }
+    to{
+        width: 100%;
+        left: 0;
+    }
+}
+
+@keyframes logo-animation {
+    0%{
+        left: -2rem;
+    }
+
+    25%{
+        left: -.6rem;
+        background-color: var(--second-animation-color);
+    }
+    
+    75%{
+        left: 3rem;
+        background-color: var(--first-anmimation-color);
+        transform: scale(.7);
+    }
+
+    100%{
+        left: 1.22rem;
+        background-color: var(--blue-white-color);
+    }
+}
