@@ -1,7 +1,7 @@
 .theme-light{
-    background-color: #ffffff;
+    background-color: #0E0E23;
 }
 
 .theme-light .header-container{
-    box-shadow: 0px 5px 12px hsla(229, 15%, 22%, 0.21);
+    box-shadow: none;
 }

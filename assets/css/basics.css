@@ -1,3 +1,4 @@
+
 /* BASICS VARIABLES */
 *,
 *::after,
@@ -12,11 +13,16 @@ html {
 }
 
 body {
-    background-color: #0E0E23;
-    color: var(--fonts-color-whity);
-    font-size: 1rem;
+    background-color: var(--body-color)  ;
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
     font-family: var(--body-font);
     transition: .4s ease-in;
+}
+
+h1,h2,h3,h4{
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
 }
 
 ul {
@@ -27,6 +33,44 @@ a {
     text-decoration: none;
 }
 svg {
-    fill: var(--fonts-color-whity);
+    fill: var(--text-color);
     transition: .3s ease;
+}
+
+img{
+    width: 100px;
+    height: auto;
+}
+
+button{
+    border: none;
+    background: none;
+    font-family: var(--body-font);
+    
+}
+
+section{
+    padding: 3.5rem 0 4rem;
+    text-align: center;
+}
+
+.container {
+    margin-inline: var(--mb-1-5);
+}
+
+.grid{
+    display: grid;
+    gap: 1.25rem;
+}
+
+.section-title {
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-0-25);
+}
+
+.section-subitle{
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-2);
 }

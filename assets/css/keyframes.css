@@ -9,24 +9,32 @@
     }
 }
 
-@keyframes logo-animation {
+@keyframes menu-show {
     0%{
-        left: -2rem;
+        right: -200%;
+        transform: scale(.5);
+        opacity: 0;
     }
-
-    25%{
-        left: -.6rem;
-        background-color: var(--second-animation-color);
-    }
-    
-    75%{
-        left: 3rem;
-        background-color: var(--first-anmimation-color);
-        transform: scale(.7);
-    }
-
+   
     100%{
-        left: 1.22rem;
-        background-color: var(--blue-white-color);
+        right: 0;
+        opacity: 1;
+        transform: scale(1);
     }
 }
+
+
+@keyframes menu-hide {
+    0% {
+            right: 0;
+            transform: scale(1);
+            opacity: 1;
+        }
+    
+        100% {
+            opacity: 0;
+            right: -200%;
+            transform: scale(.5);
+        }
+    
+} 

@@ -1,0 +1,55 @@
+
+/* ======== ABOUT SECTION ==========*/
+.about-container{
+    place-items: center;
+}
+.about-img{
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    justify-self: center;
+    display: grid;
+    place-content: center;
+    /* background: linear-gradient(); */
+    overflow: hidden;
+    background: rgba(118, 36, 210, 0.6);
+    border-radius: 50%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blu(5px);
+    border: 1px solid rgba(118, 36, 210, 0.3);
+}
+
+.about-img img {
+    padding-top: 1rem;
+}
+
+.section-discribtion{
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.about-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+}
+
+.info-title{
+    font-size: var(--h1-font-size);
+}
+
+.info-subtitle{
+    font-size: var(--smaller-font-size);
+}
+
+.about-botton{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.about-botton i {
+    font-size: var(--h3-font-size);
+}

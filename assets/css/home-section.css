@@ -1,0 +1,60 @@
+
+/* ======== HOME SECTION ==========*/
+.up{
+    margin-bottom: 2rem;
+    grid-template-columns: .5fr 3fr;
+}
+
+.social-icons{
+    display: grid;
+}
+
+.social-icons i {
+    font-size: 1.2rem;
+    color: var(--first-color);
+    transition: .4s ease-in-out;
+}
+
+.social-icons i:hover{
+    color: var(--first-color-alt);
+}
+
+.home-blob{
+    width: 180px;
+    fill: var(--first-color);
+}
+
+.blob-img{
+    width: 170px;
+} 
+
+.home-data{
+    text-align: left;
+}
+
+.home-title{
+    font-size: var(--big-font-size);
+}
+
+.home-subtitle{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-5);
+}
+
+.home-discription{
+    color: var(--text-color-light);
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+
+.button{
+    display: inline-flex;
+    gap: .3rem;
+    background-color: var(--first-color);
+    font-weight: var(--font-mediem);
+    color: white;
+    padding: .5rem .7rem;
+    border-radius: 5px;
+    cursor: pointer;
+}

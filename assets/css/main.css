@@ -2,5 +2,7 @@
 @import "root.css";
 @import "basics.css";
 @import "header.css";
+@import 'home-section.css';
+@import 'about-section.css';
 @import "keyframes.css";
 @import "theme-light.css";

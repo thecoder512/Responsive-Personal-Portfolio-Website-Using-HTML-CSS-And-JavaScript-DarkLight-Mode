@@ -1,90 +1,87 @@
 /* HEADER & NAV */
 .dash-header{ 
     width: 100%;
-    position: static;
-    z-index: var(fixed-z);
+    position: fixed;
+    bottom: 0rem;
+    background-color: var(--body-color);
+    z-index: var(--z-fixed);
 }
 
 .header-container {
-    height: 3rem;
+    height: 2.5rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    background-color: var(--second-color);
-    padding: .5rem 1rem;
-    box-shadow: none;
+    padding: 0rem 1rem;
+    box-shadow: 0px -1px 4px hsla(229, 15%, 22%, 0.21);
 }
 
-.theme-icon{
-    font-size: 1.4rem;
-    display: grid;
+.header-logo{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+    transition: .4s ease-in;
+}
+
+.extra{
+    grid-template-columns: repeat(2, 1fr);
+    gap: .8rem;
     justify-self: flex-end;
+}
+
+#theme-icon,
+#toggel-icon{
+    font-size: var(--h3-font-size);
+        color: var(--title-color);
+    cursor: pointer;
     transition: .4s ease-in;
 }
 
-
-.header-logo {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.2rem;
-    color: var(--fonts-color-whity);
-    z-index: var(--fixed-z);
+.header-logo:hover,
+#theme-icon:hover,
+#toggel-icon:hover{
+    color: var(--first-color);
 }
 
-.logo-span::after {
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    z-index: -1;
-    left: -2rem;
-    top: -.25rem;
-    background-color: #4255D4;
-    border-radius: 50%;
-    animation: logo-animation 1s linear forwards;
-    animation-delay: .1s;
-    transition: .4s ease-in;
-}
 
-.nav-menu{
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: var(--second-color);
-    width: 90%;
-    height: 3.5rem;
-    bottom: 0.5rem;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    border-radius: 10px;
-    transition: .4s ease-in;
-}
+@media screen and (max-width: 767px){
+    .nav-menu {
+        position: absolute;
+        bottom: 3.8rem;
+        width: 90%;
+        left: 0rem;
+        margin: 0 auto;
+        padding: 1.2rem;
+        background-color: var(--container-color);
+        box-shadow: 0px 1px 4px hsla(229, 15%, 22%, 0.21);
+        grid-template-columns: repeat(3, 3fr);
+        border-radius: 8px;
+        transition: .4s ease-in;
+        animation: menu-hide .3s linear forwards;
+    }
 
-.list-link{
-    display: grid;
-    place-items: center;
-    gap: 0.2rem;
-    transition: .4s ease-in;
-}
+    .list-link{
+        display: grid;
+        place-items: center;
+        text-transform: capitalize;
+        color: var(--title-color);
+        font-size: var(--small-font-size);
+        font-weight: var(--font-medium);
+        gap: 0.2rem;
+        transition: .3s ease-in-out;
+    }
 
-.list-link svg{
-    z-index: 10;
-}
+    .list-link:hover{
+        color: var(--first-color);
+    }
 
-.list-link span{
-    display: none;
-}
+    .list-link i{
+        font-size: var(--h3-font-size);
+        font-weight: 700;
+    }
 
-.focused-nav-link::after{
-    content: '';
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--theme-svg-color);
-    transition: .4s ease-in;
+    .nav-menu-active{
+        animation: menu-show .3s linear forwards;
+        
+    }
 }
